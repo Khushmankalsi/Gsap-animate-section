@@ -649,7 +649,7 @@
 
         .featured-projects{
             background-color: #8B0000;
-            padding: 20px 0px ;
+            padding: 60px 0px ;
         }
 
         .featured-projects .section-title{
@@ -759,3 +759,75 @@
             justify-content: start;
             align-items: end;
         }
+
+/* Services Card */
+
+        .servicessection{
+            background-color: #8B0000;
+            padding: 20px 0px ;
+        }
+
+        .servicessection .section-title{
+            /* padding: 15px !important; */
+            color: #fff !important ;
+            font-size: 46px !important;
+            font-weight: 900;
+            /* border-bottom: 1px solid white; */
+            /* margin: 20px !important; */
+        }
+
+        .servicessection .service-head{
+            margin-bottom: 40px !important ;
+            border-bottom: 1px solid white;
+            text-align: left !important;
+            display: flex;
+            text-align: left !important;
+            margin-bottom: 1;
+            position: relative;
+            border-bottom: 1px solid white;
+            margin-bottom: 70px;
+            padding: 12px;
+}
+
+        .servicessection .Servicesectionbx {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 0;
+            height: 445px !important;
+            width: 371px !important;
+            transition: .7s;
+        }
+
+        .servicessection .Servicesectionbx h3 {
+            transition: .7s;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .servicessection .Servicesectionbx:hover h3{
+            transform: translateY(-50px) !important ;
+            transition: .7s;
+        }
+
+        .Servicesectionbx ul{
+            padding: 20px 0px ;
+            list-style: none !important;
+            text-align: center;
+            transition: .7s;
+            opacity: 0;
+        }
+
+        .Servicesectionbx:hover ul{
+            opacity: 1;
+            transform: translateY(-50px) !important ;
+            transition: .7s;
+        }
+
+/* Services Card end */
