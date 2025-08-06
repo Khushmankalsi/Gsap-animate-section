@@ -1,6 +1,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
         .noto-serif{
             font-family: "Noto Serif", serif;
@@ -17,6 +18,13 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
+        }
+
+        .oswald{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
         }
 
         .India{
@@ -637,135 +645,117 @@
             }
         }
 
-          .manifest-section {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #8B0000 0%, #A0000A 30%, #B22222 70%, #DC143C 100%);
+        /* Featured-projects-styling */
+
+        .featured-projects{
+            background-color: #8B0000;
+            padding: 20px 0px ;
+        }
+
+        .featured-projects .section-title{
+            padding: 15px !important;
+            color: #fff !important ;
+            font-size: 46px !important;
+            font-weight: 900;
+            border-bottom: 1px solid white;
+            margin: 20px !important;
+        }
+
+        .featured-projects .text{
+            padding-top: 9px !important ;
+            display: flex;
+            color: white !important;
             position: relative;
-            color: white;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
         }
 
-        /* Header Navigation */
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            position: relative;
-            z-index: 100;
+        .featured-projects .text .text1{
+            font-size: 24px !important;
+            position: absolute;
+            left: 0px !important;
+        }
+        
+        .featured-projects .text .text2{
+            font-size: 24px !important;
+            position: absolute;
+            right: 0px !important;
         }
 
-        .brand-section {
-            display: flex;
-            align-items: center;
-            opacity: 0;
-            transform: translateX(-50px);
-        }
-
-        .brand-icon {
-            width: 24px;
-            height: 24px;
-            background: white;
-            margin-right: 15px;
+        .img-replace{
+            background-color: white !important;
+            height: 400px !important ;
+            width: 450px !important ;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 12px !important;
+            transition: .7s;
         }
-
-        .brand-icon::before {
-            content: '|||';
-            color: #8B0000;
-            font-weight: bold;
-            font-size: 12px;
-        }
-
-        .brand-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            font-weight: 600;
-            color: white;
-        }
-
-        .location-time {
-            font-size: 16px;
-            font-weight: 500;
+        
+        .img-replace-over{
             opacity: 0;
-            transform: translateY(-20px);
+            background-color: black  !important;
+            height: 300px !important;
+            width: 325px !important ;
+            border-radius: 12px !important;
+            transition: .7s;
         }
 
-        .nav-buttons {
+        .img-replace:hover .img-replace-over{
+            opacity: 1;
+            transition: .7s;
+        }
+
+        .featured-projects-content{
+            padding-top: 93px !important;
+        }
+
+        .img-replace1 {
+            background-color: white !important;
+            height: 571px !important;
+            width: 630px !important;
             display: flex;
-            gap: 10px;
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-
-        .nav-btn {
-            padding: 8px 20px;
-            border: 2px solid rgba(255, 255, 255, 0.6);
-            background: transparent;
-            color: white;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: white;
-            transform: translateY(-2px);
-        }
-
-        .nav-btn.active {
-            background: white;
-            color: #8B0000;
-            border-color: white;
-        }
-
-        /* Feel The Shift Button */
-        .shift-container {
-            text-align: center;
-            margin: 20px 0;
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        .shift-button {
-            display: inline-flex;
+            margin-left: 22px;
             align-items: center;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.4);
+            justify-content: center;
+            border-radius: 12px !important;
+            transition: .7s;
+        }
+        
+        .img-replace-over1 {
+            opacity: 0;
+            background-color: black !important;
+            height: 470px !important;
+            width: 495px !important;
+            border-radius: 12px !important;
+            transition: .7s;
+        }
+
+
+        .img-replace1:hover .img-replace-over1{
+            opacity: 1;
+            transition: .7s;
+        }
+
+        .featured-projects .project-card-btn .button .btn{
+            margin: 20px;
+            background-color: white;
+            color: #8B0000;
+            padding: 12px 18px;
+            border-radius: 12px !important;
+            transition: .7s;
+        }
+
+        .featured-projects .project-card-btn .button .btn:hover{
+            background-color: #8B0000;
             color: white;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 500;
-            font-size: 16px;
-            backdrop-filter: blur(10px);
-            cursor: pointer;
-            transition: all 0.3s ease;
+            border: 1px solid white;
+            padding: 12px 18px;
+            border-radius: 12px !important;
+            transition: .7s;
         }
 
-        .shift-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.6);
-            transform: scale(1.05);
-        }
-
-        .shift-dot {
-            width: 8px;
-            height: 8px;
-            background: white;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .shift-arrow {
-            margin-left: 10px;
-            font-size: 14px;
+        .featured-projects .project-card-btn{
+            display: flex;
+            justify-content: start;
+            align-items: end;
         }
